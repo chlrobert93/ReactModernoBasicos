@@ -1,9 +1,11 @@
 import React from 'react';
 
-function Header(){
+//props se paso a destructuring titulo
+function Header({titulo}){
+    console.log(titulo);
     //Return es lo que se ve en pantalla
     return(
-        <h1>Desde el header</h1>
+        <h1 className= 'encabezado'>{titulo}</h1>
     )
 }
 
